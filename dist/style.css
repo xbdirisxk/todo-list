@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+	background-color: hsl(60, 100%, 97%);
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 25px;
+	margin: 0;
+}
+
+#title {
+	background-color: hsl(203, 30%, 26%);
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
+	padding: 5px;
+	padding-left: 10px;
+	margin: 0;
+	font-size: 2.5rem;
+	color: white;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	height: 100%;
+}
+
+.todo-info {
+	background-color: #72908e;
+	text-align: left;
+	padding: 10px;
+	padding-left: 40px;
+	height: 88vh;
+	width: 26%;
+	color: white;
+}
+.todo-list {
+	background-color: hsl(60, 100%, 97%);
+	padding: 10px;
+	height: 88vh;
+	width: 74%;
+}
