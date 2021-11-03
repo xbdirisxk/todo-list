@@ -7,10 +7,10 @@
 			href="check-double-solid.svg"
 			type="image/x-icon"
 		/>
-		<script
+		<!-- <script
 			src="https://kit.fontawesome.com/8d183cb119.js"
 			crossorigin="anonymous"
-		></script>
+		></script> -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +23,24 @@
 				<span><i class="fa fa-inbox fa-sm"></i> inbox </span> <br />
 				<span><i class="fa fa-calendar-day fa-sm"></i> Today </span> <br />
 				<span><i class="fa fa-calendar-week fa-sm"></i> Week </span>
+
+				<div class="projects">
+					<h4><i class="fa fa-th-list fa-sm"></i> projects</h4>
+					<span> <i class="fa fa-clipboard-list fa-xs"></i> study</span>
+				</div>
 			</div>
-			<div class="todo-list">list your todos here</div>
+			<div class="todo-list">
+				<div class="add-item">
+					<input type="text" id="add-item" placeholder="read book..." />
+					<button>Done</button>
+				</div>
+				<div class="items-list">
+					<div class="item">
+						<input type="checkbox" checked />
+						<span>eat alot of food and go to gym</span>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="main.js"></script>
 	</body>
