@@ -1,22 +1,27 @@
 const todoItems = document.querySelector('.items-list');
-const textField = document.querySelector('.todo-list > .add-item > input');
+
+const textField = document.querySelector('.add-item > #add-field');
 const addButton = document.querySelector('.todo-list > .add-item > button');
 
 addButton.addEventListener('click', () => {
 	createItem();
 });
 
+textField.addEventListener('keyup', (event) => {
+	if (event.key === 'Enter') createItem();
+});
+
 function createItem() {
-	let div = document.createElement('div');
+	const div = document.createElement('div');
 	div.classList.add('item');
 	// checkbox
-	let checkbox = document.createElement('input');
+	const checkbox = document.createElement('input');
 	checkbox.setAttribute('type', 'checkbox');
-	let text = document.createElement('span');
+	// todo text
+	const text = document.createElement('span');
 	text.textContent = textField.value;
 	div.append(checkbox);
 	div.append(text);
 
 	todoItems.append(div);
-	text.textContent = '';
 }
