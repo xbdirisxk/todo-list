@@ -27,7 +27,7 @@ body {
 	height: 100%;
 }
 
-.todo-info {
+.todo-menu {
 	background-color: #72908e;
 	text-align: left;
 	padding: 10px;
@@ -37,13 +37,34 @@ body {
 	color: white;
 }
 
-.projects h4 {
-	margin-bottom: 7px;
+.projects {
+	margin-top: 20px;
+}
+.projects > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
-/* todo list */
+.projects > div > span {
+	max-height: 21px;
+	margin: 7px;
+}
 
-.todo-list {
+.projects > div > h4 {
+	margin: 7px;
+	margin-left: 0;
+}
+
+.projects > span:hover {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* todo list board */
+
+.todo-board {
 	background-color: hsl(60, 100%, 97%);
 	padding: 10px;
 	height: 88vh;
@@ -55,7 +76,7 @@ body {
 .add-item {
 	margin: 10px;
 }
-.add-item > input {
+.add-item > #add-field {
 	width: 88%;
 	font-size: 20px;
 	padding: 8px;

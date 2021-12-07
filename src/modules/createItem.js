@@ -1,7 +1,7 @@
 const todoItems = document.querySelector('.items-list');
 
 const textField = document.querySelector('.add-item > #add-field');
-const addButton = document.querySelector('.todo-list > .add-item > button');
+const addButton = document.querySelector('.todo-board > .add-item > button');
 
 addButton.addEventListener('click', () => {
 	createItem();

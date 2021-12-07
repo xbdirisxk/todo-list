@@ -19,19 +19,24 @@
 	<body>
 		<h1 id="title"><span class="fa fa-check-double"></span> Todo List</h1>
 		<div class="container">
-			<div class="todo-info">
+			<div class="todo-menu">
 				<span><i class="fa fa-inbox fa-sm"></i> inbox </span> <br />
 				<span><i class="fa fa-calendar-day fa-sm"></i> Today </span> <br />
 				<span><i class="fa fa-calendar-week fa-sm"></i> Week </span>
 
 				<div class="projects">
-					<h4><i class="fa fa-th-list fa-sm"></i> projects</h4>
-					<span> <i class="fa fa-clipboard-list fa-xs"></i> study</span>
+					<div>
+						<h4><i class="fa fa-th-list fa-sm"></i> projects</h4>
+						<span>➕</span>
+					</div>
+
+					<span> <i class="fa fa-clipboard-list fa-xs"></i> study</span><br />
+					<span> <i class="fa fa-clipboard-list fa-xs"></i> work</span>
 				</div>
 			</div>
-			<div class="todo-list">
+			<div class="todo-board">
 				<div class="add-item">
-					<input type="text" id="add-item" placeholder="read book..." />
+					<input type="text" id="add-field" placeholder="read book..." />
 					<button>Done</button>
 				</div>
 				<div class="items-list">
